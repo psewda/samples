@@ -14,7 +14,7 @@
   - Disable Firewall
     - **check status**: `sudo firewall-cmd --state`
     - **stop service**: `sudo systemctl stop firewalld`
-    - **disable service**: `sudo systemctl disable firewalld`
+    - **disable service**: `sudo systemctl disable firewalld` 
   - Disable SElinux
     - **check status**: `sestatus`
     - **open config file**: `sudo vi /etc/selinux/config`
@@ -27,7 +27,7 @@
     - **enable powertools repo**: `sudo dnf config-manager --set-enabled powertools`
     - **verify**: `yum repolist`
   - Install Important Packages
-    - **network tools**: `sudo yum install net-tools`
-    - **binding utils**: `sudo yum install bind-utils`
+	  - **network tools**: `sudo yum install net-tools`
+	  - **binding utils**: `sudo yum install bind-utils`
   - Update All Packages
-    - **run**: `sudo yum update && sudo yum upgrade`
+	  - **run**: `sudo yum update && sudo yum upgrade`
